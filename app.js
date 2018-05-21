@@ -6,7 +6,7 @@ console.log('Kubia server starting...');
 var www = http.createServer(function(request, response) {
   console.log('Received request from ' + request.connection.remoteAddress);
   response.writeHead(200);
-  response.end('This is V1 running in Pod ' + os.hostname() + "\n");
+  response.end('This is v1 running in Pod ' + os.hostname() + "\n");
 });
 
 www.listen(8080);
